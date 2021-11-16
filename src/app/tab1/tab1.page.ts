@@ -1,11 +1,12 @@
 import { Tab2Page } from './../tab2/tab2.page';
-import { Component,OnInit,ViewChild} from '@angular/core';
+import { Component,Input,OnInit,ViewChild} from '@angular/core';
 import { NavController } from '@ionic/angular';
-import { newContacts } from '../add-contact/add-contact.page';
+import { AddContactPage, newContacts } from '../add-contact/add-contact.page';
 import { ContactService } from '../services/contact-service.service';
 import { ShowDetailsPage} from '../show-details/show-details.page';
 import { IonSearchbar } from '@ionic/angular';
 import { MenuController } from '@ionic/angular';
+import { Contact } from '../models/contact';
 
 
 @Component({
@@ -23,10 +24,8 @@ export class Tab1Page implements OnInit {
   showList = showUser;
   contacts = [];
   public searchedItem: any;
-  //addedContacts: {name: string, lastname: string, phone: number, phone2: number, img: string, dateAdd: Date, dateUpdate: Date}[];
   constructor(private navController: NavController, private contactservice: ContactService, private menu: MenuController) {
-    //this.addedContacts = newContacts;
-    this.contacts =  this.contactservice.getAllContact();
+    this.contacts = this.contactservice.getAllContact();
     this.searchedItem = this.contacts;
 
     setTimeout(() => {

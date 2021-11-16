@@ -63,7 +63,6 @@ export class AddContactPage implements OnInit {
         this.newCon = this.addGroup.value;
         this.dateAdd = Date.now();
         this.dateUpdate  = Date.now();
-        console.log(this.newCon);
        this.contactList.push(this.newCon);
        console.log('Contact Saved Successfully');
        console.log('new list',this.contactList);
@@ -86,4 +85,5 @@ export class AddContactPage implements OnInit {
 }
 
 export let newContacts: {name: string, phone: number, img: string}[];
+
 
