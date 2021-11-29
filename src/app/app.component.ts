@@ -28,4 +28,8 @@ export class AppComponent {
     console.log(item + '-->  is clicked');
     this.menu.close();
   }
+
+  onClick() {
+    console.log('U are out');
+  }
 }
