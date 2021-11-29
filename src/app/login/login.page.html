@@ -1,0 +1,19 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content class="ion-padding ion-text-center" color="danger">
+  <img src="../../assets/logo.png" class="logo" />
+
+  <div class="title">
+      <h2>Welcome</h2>
+      <p>To Book Contact</p>
+  </div>
+  <div class="ion-margin-top">
+  <ion-input placeholder="Please enter your username" class="primary-input" [(ngModel)]="user"></ion-input>
+  <ion-input placeholder="Please enter your password" type="password" class="primary-input" [(ngModel)]="password"></ion-input>
+</div>
+  <div class="ion-margin-top">
+    <ion-button expand="block" class="ion-margin-top" (click)="login()" color="red" ><ion-icon name="logo-android" slot="start"></ion-icon>LOGIN</ion-button>
+  </div>
+</ion-content>

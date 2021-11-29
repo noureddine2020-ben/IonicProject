@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import {MenuController } from '@ionic/angular';
 
 @Component({
@@ -7,7 +8,8 @@ import {MenuController } from '@ionic/angular';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor(private menu: MenuController) {}
+  constructor(private menu: MenuController,
+              public router: Router) {}
 
 
   ionDidOpen(event) {
@@ -29,7 +31,8 @@ export class AppComponent {
     this.menu.close();
   }
 
-  onClick() {
+  logout() {
+    this.router.navigateByUrl('/login');
     console.log('U are out');
   }
 }
