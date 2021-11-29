@@ -1,3 +1,6 @@
+0-to login please enter username : 2021
+password : 123456
+
 1-sur la liste des contacts afin d'ajouter un contact dans la liste des catégories
 il suffit glisser à droite sur le contact et choisir la catégorie
 2-pour supprimer un contact il suffit de glisser à gauche sur le contact et appuyser sur la corbeille
