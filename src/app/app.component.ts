@@ -31,8 +31,28 @@ export class AppComponent {
     this.menu.close();
   }
 
+  amisCategories()  {
+    this.router.navigateByUrl('/tabs/tab2');
+
+  }
+  familleCategories() {
+    this.router.navigateByUrl('/tabs/tab3');
+
+  }
+
+  professionelCategories(){
+    this.router.navigateByUrl('/tabs/tab4');
+
+  }
+
+  autresCategories() {
+    this.router.navigateByUrl('/tabs/tab5');
+
+  }
+
   logout() {
     this.router.navigateByUrl('/login');
     console.log('U are out');
   }
+
 }
